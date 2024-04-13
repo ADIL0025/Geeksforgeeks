@@ -2,11 +2,10 @@
 
 class Solution:
     def reversedBits(self, x):
-        x1=0
-        for i in range(0,32):
-            x1=(x1<<1)|(x&1)
-            x>>=1
-        return x1
+        # code here 
+        binn=bin(x)[2:].zfill(32)[::-1]
+        return int(binn,2)
+       
 
 
 #{ 
